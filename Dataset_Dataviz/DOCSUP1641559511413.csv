@@ -1,9 +1,0 @@
-Attributo,Etichetta,Descrizione,TipoDato
-ANN_SCO_RIF,AnnoScolastico,Anno scolastico di riferimento anagrafe scuola,Numerico
-DES_PRV,Provincia,Provincia di appartenenza territoriale del Comune ove e' sita la scuola,Testo   
-DES_ORD,OrdineScuola,"Indica il grado di istruzione di titolarita', Assume i valori: SCUOLA INFANZA, SCUOLA PRIMARIA, SCUOLA SECONDARIA I GRADO, SCUOLA SECONDARIA II GRADO",Testo   
-TIP_POS,TipoPosto,Tipo posto. Assume valori: NORMALE e SOSTEGNO,Testo   
-TIP_SUP,TipoSupplenza,Tipologia supplenza. Assume valori: ANNUALE per le supplenze di durata fino al 31/08 e FINO AL TERMINE per le supplenze di durata fino al 30/06,Testo   
-FAS_ETA,FasciaEta,"Indica la fascia di eta'. Assume i seguenti valori: FINO A 34, TRA 35 E 44, TRA 45 E 54, OLTRE 54. La fascia di eta' e' calcolata al 31 dicembre dell'anno scolastico di riferimento",Testo   
-QTY_NUM_SUP_DOM,DocentiSupplentiMaschi,Numero di docenti supplenti maschi. Non viene conteggiato il personale educativo e gli insegnanti di religione,Numerico
-QTY_NUM_SUP_DOF,DocentiSupplentiFemmine,Numero di docenti supplenti femmine. Non viene conteggiato il personale educativo e gli insegnanti di religione,Numerico
