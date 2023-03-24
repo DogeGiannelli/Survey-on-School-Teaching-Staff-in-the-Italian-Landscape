@@ -1,1 +1,1 @@
-APRIRE il file "index.html" per visualizzare il proggeto.
+Download Repository and open the index.html file to read Report and Data Visualization
