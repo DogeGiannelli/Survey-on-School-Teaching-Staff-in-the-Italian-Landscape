@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,400i,700,700i|Source+Code+Pro|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>Data Viz Lab</title>
+  <!-- <link rel="shortcut icon" type="image/jpg" href="Favicon_Image_Location"/>-->
+  <!--<link rel="icon" type="image/png" href="C:\Users\Ale\Desktop\Template_Bicocca_2022\media\logo.png"/>-->
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+    <!-- Intro con titolo e immagine. Inserire immagine in /media/ con il nome cover.png
+    Al posto dei segna posto aggiungere il vostro nome e matricola negli <span> -->
+      <div class="intro">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <h5 class="text-center">UNIMIB - 2021/2022, alla cortese attenzione del professor Federico Cabitza</h5>
+              <h1 class="text-center">Indagine sul Personale Scolastico Docente nel Panorama Italiano</h1>
+              <h4 class="text-center">Stesura a cura di: <br>
+                <span class="name">Giannelli Alessio (846586)</span>,
+                <span class="name">Imbonati Lorenzo (846577)</span> e
+                <span class="name">Valoti Davide (846737)</span></h5>
+              </div>
+          </div>
+          </div>
+      </div>
+
+      <!-- INTRODUZIONE -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <h3><strong>INTRODUZIONE</strong></h3>
+            <p style="text-align: justify;">Dall'inizio del nuovo anno scolastico sono state molteplici le testate giornalistiche che
+              hanno evidenziato alcune problematiche del sistema di Istruzione Italiano, riportando come nel corso degli
+              ultimi anni si sia arrivati ad avere una carenza pari ad oltre 100 mila docenti. Questo fenomeno riguarda soprattutto le Regioni del Nord Italia,
+              costrette, in alcuni casi, a nominare come docenti ragazzi diplomati da pochi mesi. <br>
+              Gli obiettivi della ricerca consistono nell'indagare i GAP che l'istruzione
+              italiana presenta a livello di distribuzione dei docenti, a livello di genere e di precariato,
+              analizzando le eventuali differenze sia a livello geografico che per grado d'insegnamento. 
+              La popolazione del corpo docente analizzata comprende i seguenti ordini scolastici: scuola dell'infanzia, scuola primaria, scuola secondaria I grado e scuola secondaria II grado. 
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Primo blocco di testo -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <h3><strong>CARTOGRAMMA - DISTRIBUTION GAP</strong></h3>
+            <p style="text-align: justify;">Il primo obiettivo della ricerca è quello di ottenere
+               una panoramica generale sul mondo dell'istruzione, indigando eventuali differenze
+               geografiche di distribuzione. In questa fase si è scelto di utilizzare due cartogrammi al fine di evidenziare le differenze di numerosità grazie alla distorsione di 
+               ciascuna Regione rispetto alle relative dimensioni effettive, oltre che del colore. Sono stati
+                utilizzati anche dei glifi per evidenziare le differenze tra massimo e minimo e per avere un
+                 riferimento rispetto allo stesso fenomeno a livello italiano. Il confronto tra glifi permette, 
+                 inoltre, di evidenziare le differenze tra le scale utilizzate, molto più marcate nel cartogramma non standardizzato relativo al numero di docenti.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Prima Visualizzazione -->
+      <div class="container viz">
+        <div class="row">
+          <img src="media/Cartogramma.png" height="50%">
+        </div>
+      </div>
+
+
+
+
+      <!-- Secondo blocco di testo -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <h3><strong>SCATTERPLOT - GENDER GAP</strong></h3>
+            <p style="text-align: justify;">
+              Per dimostrare il point relativo alle differenze di genere si è scelto di visualizzare i dati attraverso uno scatterplot.
+               Questa tipologia di visualizzazione permette, innanzitutto, di avere un'idea chiara riguardo alla dispersione
+               dei dati con riferimento al genere, all'ordine scolastico e alla provincia, evidenziando eventuali outliers; in secondo luogo consente, qualora vi fossero,
+               di far emergere pattern di osservazioni che solo attraverso questo tipo di plot possono essere riscontrati, come ad esempio la netta distinzione tra 
+               i record relativi alla scuola dell'infanzia e alla scuola primaria.  <br>
+              La data visualization è reperibile nativamente sulla piattaforma <i>Tableau Public</i> al seguente
+              <a href="https://public.tableau.com/views/ScatterData_finale2/Storia1?:language=it-IT&:display_count=n&:origin=viz_share_link"> link</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Seconda Visualizzazione -->
+      <div class="container viz">
+        <div class="row">
+          <div class='tableauPlaceholder' id='viz1643471134301' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ScatterData_finale&#47;Storia1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='it-IT' /><param name='filter' value='publish=yes' /></object></div>
+          <script type='text/javascript'>var divElement = document.getElementById('viz1643471134301');var vizElement = divElement.getElementsByTagName('object')[0];vizElement.style.width='1366px';vizElement.style.height='795px';var scriptElement = document.createElement('script');scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+        </div>
+      </div>
+
+
+
+
+      <!-- Terzo blocco di testo -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <h3><strong> LINEPLOT e MAPPA COROPLETICA - PRECARIOUS GAP </strong></h3>
+            <p style="text-align: justify;"> In questa visualizzazione si vuole analizzare l'andamento nel tempo del numero di precari all'interno delle
+              scuole italiane, considerando le differenze tra le zone nelle quali l'Italia viene convenzionalmente suddivisa.
+              Si è deciso di analizzare il point utilizzando una serie storica per gli anni scolastici a partire dal 2015/16 fino al 2019/20, il
+              cui elemento principale viene sottolineato sia dall'uso della <i>lightness</i> che dall'ampiezza delle linee. Si è
+              voluto, inoltre, rappresentare le stesse informazioni anche mediante la realizzazione di una mappa coropletica,
+              sfruttando nuovamente l'uso della luminosità. Questo permette di comprendere il fenomeno ad una granularità più specifica, a livello provinciale. <br>
+              La data visualization è reperibile nativamente sulla piattaforma <i>Tableau Public</i> al seguente
+              <a href="https://public.tableau.com/shared/828XKFRXC?:display_count=n&:origin=viz_share_link"> link</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Terza Visualizzazione -->
+      <div class="container viz">
+        <div class="row">
+          <div class='tableauPlaceholder' id='viz1643379098570' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Precariato_finale&#47;Storia1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='it-IT' /><param name='filter' value='publish=yes' /></object></div>
+          <script type='text/javascript'>var divElement = document.getElementById('viz1643379098570');var vizElement = divElement.getElementsByTagName('object')[0];vizElement.style.width='1366px';vizElement.style.height='795px';var scriptElement = document.createElement('script');scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+        </div>
+      </div>
+
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <h3><strong> CONCLUSIONI E SVILUPPI FUTURI </strong></h3>
+            <p style="text-align: justify;"> 
+              La ricerca ha permesso di indagare i tre GAP relativi al sistema di istruzione italiano definiti nell'introduzione. 
+              Nello specifico, la prima infografica ha permesso di cogliere le differenze geografiche di distribuzione del corpo docente a livello regionale,
+              evidenziando come i minori tassi si concentrino nelle zone settentrionali. Sfruttando una granularità provinciale, la seconda infografica ha fatto emergere
+              una netta prevalenza dei docenti di sesso femminile per ogni grado d'istruzione. Si evidenzia, inoltre, una diminuzione del gender GAP all'aumentare dell'ordine 
+              scolastico, anche se mai completamente colmato. Infine, la terza infografica ha messo in luce come la precarietà sia un fenomeno maggiormente diffuso nelle
+              province settentrionali, nonostante presentino i valori minimi per tasso di docenza. Emerge, inoltre, un legame inversamente proporzionale tra il numero di 
+              docenti e la percentuale di precari, in particolare nelle province del meridione che presentano le percentuali minime di precarietà ma i tassi massimi di docenza.
+              <br>
+              <br>
+              Un possibile sviluppo futuro potrebbe consistere nell'indagare il fenomeno del precariato condizionatamente all'ordine scolastico al fine dell'indivuazione di 
+              eventuali pattern.
+              Inoltre, sarebbe interessante integrare i dati relativi ai due anni scolastici più recenti, non ancora disponibili, per ricavare risultati di maggior attualità e 
+              valutare l'impatto delle recenti riforme scolastiche.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <hr>
+
+
+
+      
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1"> <!-- <div class="col-md-6 col-md-offset-2">  per avere i link affiancati-->
+
+              <!-- In questa parte descrivere il processo di raccolta, pulizia e visualizzazione dei dati. Che tipo di dati avevo? Che tipo di operazioni sono state effettuate per poter visualizzare i dati. Come si leggono le visualizzazioni?-->
+              <h3><strong>NOTE METODOLOGICHE</strong></h3>
+              <p style="text-align: justify;">Si vuole descrivere la metodologia utilizzata per la creazione e l’analisi della struttura dati e per la realizzazione delle visualizzazioni. 
+                Innanzitutto, si è deciso di scaricare ed utilizzare i dati, relativi ai docenti per le scuole italiane per gli ordini scolastici dall’infanzia 
+                alla scuola secondaria di II grado, dal portale <a href="https://dati.istruzione.it/opendata/"> Dati-Istruzione</a>. I dati utilizzati, oltre alla numerosità dei docenti differenziata 
+                per genere e per ruolo, presentano per ogni osservazione l’indicazione dell’anno scolastico e della provincia di riferimento. Successivamente questi dati sono stati 
+                integrati con le informazioni relative alla regione, alla zona e alla numerosità della popolazione per ciascuna provincia, utilizzando i dati presenti sul sito dell' <a href="https://www.istat.it"> ISTAT</a>. 
+                L’integrazione dei dati è stata effettuata servendosi dei linguaggi Python e R e tramite l’utilizzo di Excel. Le visualizzazioni interattive, invece, sono state create con l’utilizzo 
+                del software Tableau, mentre la visualizzazione statica con il linguaggio R.
+              </p>
+
+              <hr>
+
+              <!-- Seguire indicazioni prof Cabitza. Aggiungere immagini con taf img se necessario-->
+              <h3><strong>VALUTAZIONE QUALITA'</strong></h3>
+              <p style="text-align: justify;">
+                Tra le possibili valutazioni di qualità disponibili, abbiamo optato per l'impiego delle seguenti metodologie di Assessment aventi scopo formativo:
+                <br><br>
+                  1) Valutazione Euristica;<br>
+                  2) Valutazione Utente - Test;<br>
+                  3) Questionario Psicometrico.<br><br>
+                L'attuazione delle metodologie pocanzi citate ed i risultati ottenuti vengono descritti dettagliatamente nei seguenti paragrafi.
+              </p>
+
+              <hr>
+
+              <h3><strong>VALUTAZIONE EURISTICA</strong></h3>
+              <p style="text-align: justify;">
+                Per il compimento dell'assessment euristico, di tipo formativo, sono state interpellate 3 persone distinte. Seguendo la metodologia <i>think-aloud</i>, 
+                sono state sfruttate le loro impressioni ad alta voce per operare miglioramenti nelle infografiche.
+                Il seguente elenco permette di sottolineare i commenti più significativi relativi alle visualizizzazioni d'interesse: <br><br>
+                
+                
+                  1) <strong>Cartogramma: </strong> Si riportano alcuni commenti relativi a difficoltà nel cogliere le differenze tra i due cartogrammi.
+                  In particolare, non risulta chiara la differenza tra le scale di colore utilizzate, essendo intervalli diversi di valori ma con le stesse
+                  gradazione di colore. Alcuni utenti riportano la mancanza del dato a livello nazionale, necessario per un confronto con la singola situazione regionale.  <br> <br>
+                  
+                  2) <strong>Scatterplot: </strong> Gli utenti notano ampi spazi vuoti dovuti alla dispersione dei dati.
+                    Identificano i vari ordini di istruzione e chiedono se vi è un "tasso di docenza nazionale". Non tutti riescono a cogliere immediatamente l'interattività del grafico. <br><br>
+                  
+                    3) <strong>Lineplot e Coropletica: </strong> Per quanto riguarda la serie temporale, diversi sono i commenti che evincono scarsa chiarezza nei cambiamenti percentuali di precari. L'uso esclusivo della 
+                    variazione di grandezza delle linee non risulta sufficiente. Inoltre, risulterebbe interessante capire come varia il numero
+                    di supplenti su tutto il territorio nazionale, in modo da comprendere quali delle zone italiane potrebbero influenzare maggiormente il dato nazionale.
+                    Molto gradita, invece, la possibilità di interattività con il grafico. <br>
+                    Con riferimento alla mappa coropletica, vengono riportati diversi commenti che evidenziano come il colore utilizzato non sia rappresentativo delle percentuali perché dissimile
+                    rispetto a quello usato per la serie storica. Inoltre, sarebbe gradita la possibilià di sapere con immediatezza quali sono le province che presentano i valori
+                    di percentuale di precari minimi e massimi, in modo da evitare il controllo tramite il passaggio del mouse su ciascuna provincia per ogni anno in analisi.
+                    Viene, infine, sottolineata l'importanza del tema e l'utilità dell'interattività all'interno di una visualizzazione di questo genere. <br>
+              </p>
+                
+                <br>
+                <p style="text-align: justify;">Modifiche apportate: <br><br>
+                
+                  1) <strong>Cartogramma:</strong> Per migliorare la comprensione delle differenze tra le legende, vengono introdotti 3 diversi glifi per ciascun cartogramma. Questi
+                  permettono di cogliere le differenze tra valori minimo, massimo e nazionale grazie sia alle diverse altezze che alle aree proporzionali. La modifica permette di comprendere
+                  immediatamente le differenze di scala tra massimo e minimo nelle due situazioni, risultando molto più marcate utilizzando dati non standardizzati. Il dato nazionale per il primo
+                  cartogramma indica il numero di docenti medio per regione e per questo ne viene riportata l'incertezza della stima; nel secondo cartogramma, invece, viene riportato
+                  il tasso nazionale. 
+                <br>
+                <br>
+                2) <strong>Scatterplot:</strong> Dopo le diagnostiche fatte presenti dagli utenti, si è scelto di visualizzare la bisettrice all'interno del grafico
+                al fine di poter tagliare l'asse riferito ai docenti maschili, sul quale i dati non si distribuiscono per ampi intervalli, per limitare gli spazi vuoti. È stato aggiunto per ogni ordine di scuola il tasso di docenza nazionale,
+                per il quale non è stato necessario calcolare una media ma effettuare una semplice aggregazione dei dati sommando le informazioni di tutte le
+                province a nostra disposizione. Per far cogliere subito l'interattività del grafico si è scelto di trasformare gli eventi informativi da
+                <i>click-sensitive</i> a <i>mouse-sensitive</i> e di aggiungere le distribuzioni dei docenti standardizzate per la popolazione provinciale di entrambi
+                i generi lungo gli assi dello scatterplot. Si sono, infine, confrontate anche diverse versioni di scatterplot, integrando all'assessment euristico anche un processo di assessment comparativo.
+                <br>
+                <br>
+                3) <strong>Lineplot e Coropletica:</strong> A seguito dei commenti riportati dagli utenti, si è deciso di amplificare i cambiamenti di percentuale dei precari rispetto ai docenti,
+                introducendo un uso del colore che si satura all'aumentare dei supplenti, e di aggiungere agli estremi delle linee i dati relativi alle percentuali. In
+                questo modo risulta migliorata l'interpretabilità visiva delle linee e si fornice un'indicazione immediata delle differenze nei 5 anni considerati in analisi. Successivamente
+                è stata aggiunta la serie temporale relativa all'Italia nella sua completezza, calcolata a partire dai dati sulle province, per evidenziare le zone che contribuiscono
+                maggiormente alla totalità dei docenti in Italia.
+                Per quanto riguarda la mappa coropletica, si è deciso di utilizzare lo stesso colore e relativa <i>lightness</i> della serie temporale al fine di identificare la percentuale di precariato
+                nelle diverse province; in questo modo si ottiene una legenda unica e informativa dei valori. Infine, sono state aggiunte, per ogni anno, le etichette relative alle province
+                che presentano i valori percentuali di precariato massimi e minimi direttamente sulla mappa, in modo da coglierli immediatamente senza passaggio del cursore.
+              </p>
+              </p>
+
+              <hr>
+
+              <h3><strong>VALUTAZIONE UTENTE - TEST</strong></h3>
+              <p style="text-align: justify;">
+                Sono stati individuati 6 distinti task per effettuare la valutazione utente e sono stati sottoposti a 9 utenti. I dati sono stati raccolti su un file excel reperibile al seguente 
+                <a href="https://github.com/N0name99/DATAVIZ/blob/main/Dataset_Dataviz/test_utente.xlsx"> link</a>. Si è chiesto agli utenti, così come suggerito da
+                Nielsen, di prendere familiarità con le visualizzazioni e, solo successivamente, di rispondere ai task, anche in questo caso seguendo il protocollo <i>think-aloud</i>.
+                <br>
+                <br>
+                <strong> Prima Infografica:</strong> Cartogramma - Distribution GAP <br>
+               Si riportano i task sottoposti agli utenti le relative risposte soluzioni: <br> <br>
+               <strong> • Task 1:</strong> Identifica le due regioni che presentano il tasso di docenti standardizzato più elevato. <i>Risposta: Calabria e Basilicata.</i><br>
+               <strong> • Task 2:</strong> Identifica il numero di docenti presenti nella regione Valle d'Aosta. <br> <i>Risposta: Dato non disponibile.</i>
+            </p>
+              <div class="row">
+                <img src="media/viz1.png" alt="Risultati task cartogramma" width="500" style="vertical-align:middle">
+              </div>
+              <p style="text-align: justify;">
+              Dal grafico ottenuto è possibile osservare come gli esiti siano tutti successi e si deduce come il cartogramma, pur non essendo interattivo, sia in questo caso un grafico
+              adatto alla comprensione e semplice da leggere. <br><br></p>
+              </ul>
+              <br>
+              <p style="text-align: justify;"><strong> Seconda Infografica:</strong> Scatterplot - Gender GAP <br>
+                Si riportano i task sottoposti agli utenti le relative risposte soluzioni:
+                <br> <br>
+                  <strong> • Task 1:</strong> Identifica per ogni ordine di scuola la provincia che riporta il tasso di docenza femminile inferiore.<br><i> Risposta:  Padova (infanzia), Trieste (primaria), Bologna (secondaria I grado), Como (secondaria II grado).</i> <br>
+                  <strong> • Task 2:</strong> Identifica, in una sola volta, la posizione nei 4 ordini di istruzione della provincia di Roma e trova per quale ordine scolastico la provincia scelta ha il minor GAP di genere in percentuale.<br><i>Risposta: Scuola secondaria di II grado.</i> <br>
+              
+              <div class="row">
+                <img src="media/viz2.png" alt="Risultati task scatter plot" width="500" style="vertical-align:middle">
+              </div><p style="text-align: justify;">
+              Si può osservare che gli insuccessi siano maggiori per il secondo task rispetto al primo e che siano distribuiti su un arco di
+               tempo maggiore, fino a toccare quasi i 125 secondi. La distribuzione degli esiti nel primo task, invece, risulta più incentrata su valori intorno
+               ai 25 secondi con prevalenza di successi, indice di comprensibilità del grafico e dei task richiesti. <br><br></p>
+              </ul>
+              <br>
+              <p style="text-align: justify;"><strong> Terza Infografica:</strong> Lineplot e Coropletica - Precarious GAP <br>
+                Si riportano i task sottoposti agli utenti le relative risposte soluzioni:
+                <br> <br>
+                  <strong> • Task 1:</strong> Identifica la zona dell'Italia che presenta un incremento percentuale di precari minore dal 2016 al 2020.<br> <i>Risposta: Meridione.</i> <br>
+                  <strong> • Task 2:</strong> Identifica per la provincia di Benevento se il valore % di precari è maggiore, minore o uguale al valore % di precari della zona a cui appartiene la provincia per l'anno 2018.<br> <i>Risposta: Inferiore.</i><br>
+              
+              <div class="row">
+                <img src="media/viz3.png" alt="Risultati task terza infografica" width="500" style="vertical-align:middle">
+              </div>
+              <p style="text-align: justify;">
+              Dalla visualizzazione emerge come il secondo task sia più impegnativo del primo, in quanto il tempo impiegato dagli utenti risulta essere
+               mediamente maggiore di cirva 20 secondi; si evidenzia, però, che il violin plot che riporta un tasso di errore maggiore risulti quello relativo al primo task.</p>
+
+              
+              </ul>
+              </p>
+
+              <hr>
+
+              <h3><strong>QUESTIONARIO PSICOMETRICO - LOCORO CABITZA</strong></h3>
+              <p style="text-align: justify;">
+                Per concludere la fase di assessment, si è scelto di sottoporre il questionario Locoro-Cabitza a 18 utenti e di condurre in seguito un'analisi degli items.
+                Di seguito vengono mostrati i violin plot e le matrici di correlazione inerenti alle risposte registrate sui vari items del questionario.
+                Le risposte degli utenti sono reperibili al seguente<a href="https://github.com/N0name99/DATAVIZ/blob/main/Dataset_Dataviz/Risposte_LocoroCabitza.csv"> link</a>.
+              </p>
+
+              <p><strong>Prima Infografica:</strong> Cartogramma - Distribution GAP </p>
+              <table cellspacing="2" cellpadding="2" width="560" border="0">
+                <tbody>
+                <tr>
+                <td valign="bottom" width="186"><img src="media/viz1_q.png" alt="Risultati task terza infografica" width="500" style="vertical-align:middle"></td>
+                <td valign="top" width="186"><img src="media/viz1_c.png" alt="Risultati task terza infografica" width="500" style="vertical-align:middle"></td>
+                </tr></tbody>
+              </table>
+              <p style="text-align: justify;">La prima infografica risulta essere la più chiara, presentando per l'ambito della chiarezza valori sempre pari o superiori a 4 e una mediana pari a 6.</p>
+
+              <br><hr><br>
+              <p><strong>Seconda Infografica:</strong> Scatterplot - Gender GAP </p>
+              <table cellspacing="2" cellpadding="2" width="560" border="0">
+                <tbody>
+                <tr>
+                <td valign="bottom" width="186"><img src="media/viz2_q.png" alt="Risultati task terza infografica" width="500" style="vertical-align:middle"></td>
+                <td valign="top" width="186"><img src="media/viz2_c.png" alt="Risultati task terza infografica" width="500" style="vertical-align:middle"></td>
+                </tr></tbody>
+              </table>
+              <p style="text-align: justify;">La seconda infografica presenta valori molto elevati per l'ambito dell'informatività, risultando però meno bella della precedente, osservando un valore pari a 2 in questo ambito.</p>
+
+              <br><hr><br>
+              <p><strong>Terza Infografica:</strong> Lineplot e Coropletica - Precarious GAP </p>
+              <table cellspacing="2" cellpadding="2" width="560" border="0">
+                <tbody>
+                <tr>
+                <td valign="bottom" width="186"><img src="media/viz3_q.png" alt="Risultati task terza infografica" width="500" style="vertical-align:middle"></td>
+                <td valign="top" width="186"><img src="media/viz3_c.png" alt="Risultati task terza infografica" width="500" style="vertical-align:middle"></td>
+                </tr></tbody>
+              </table>
+              <p style="text-align: justify;">Per la terza infografica si osservano valori simili alla precedente, con valori però sempre superiori o uguali a 3 anche per gli ambiti della bellezza e della chiarezza. </p>
+
+              <br><hr><br>
+              <p style="text-align: justify;">Si è, infine, scelto di calcolare l'<strong>&alpha; di Cronbach</strong> per ogni visualizazione legata al questionario Locoro-Cabitza. Nel grafico sottostante viene riportato il confronto degli indici <i>alpha</i> con i relativi intervalli di confidenza.
+                L’&alpha; di Cronbach è un metodo statistico per misurare la coerenza interna di un questionario composto da items. Misurare la coerenza interna di un questionario significa determinare se le risposte fornite ai vari items sono tra loro consistenti, e, quindi, attendibili. 
+                Nel grafico sottostante vengono riportati i valori calcolati su ciascuna visualizzazione con i relativi intervalli di confidenza:<br><br>
+              </p>
+
+              <div class="row">
+                <img src="media/CronbachsAlpha.png" alt="Risultati task terza infografica" width="500" style="vertical-align:middle">
+              </div>
+              <br>
+              <p style="text-align: justify;">
+                1) Cartogramma: <strong>&alpha; = 0.79</strong> , lower-IC = 0.6, upper-IC = 0.98; <br>
+                2) Scatteplot: <strong>&alpha; = 0.87</strong> , lower-IC = 0.76, upper-IC = 0.98; <br> 
+                3) Lineplot-Coropletica: <strong>&alpha; = 0.87 </strong>, lower-IC = 0.75, upper-IC = 0.99; <br> <br> 
+                Stando alle stime puntuali ed agli intervalli di confidenza calcolati per i rispettivi indici &alpha; di Cronbach, si evince come il questionario
+                Locoro-Cabitza sottolinei un'ottima corenza interna (tutti gli alpha sono superiori allo 0.75 ed inferiori allo 0.9), sintomo di concordanza
+                degli items con la direzionalità del questionario e di attendibilità e riproducibilità nel tempo dei dati raccolti.
+              </p>
+
+              <br><br>
+            </div>
+          </div>
+        </div>
+      
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <script>$(document).ready(function () {
+    var trigger = $('.hamburger'),
+    overlay = $('.overlay'),
+    isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+    }
+
+    $('[data-toggle="offcanvas"]').click(function () {
+      $('#wrapper').toggleClass('toggled');
+    });
+  });
+  </script>
+
+</body>
+</html>
